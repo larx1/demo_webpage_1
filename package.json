@@ -1,0 +1,21 @@
+{
+  "name": "demo-webpage-monorepo",
+  "version": "1.0.0",
+  "description": "Cross-platform monorepo with shared React Native code for web, Android, and iOS",
+  "private": true,
+  "workspaces": [
+    "shared",
+    "backend"
+  ],
+  "scripts": {
+    "dev:web": "cd shared && npm run web",
+    "dev:android": "cd shared && npm run android",
+    "dev:ios": "cd shared && npm run ios",
+    "dev:backend": "cd backend && npm run dev",
+    "install:all": "npm install && cd shared && npm install && cd ../backend && npm install",
+    "build": "cd shared && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

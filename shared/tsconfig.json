@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "jsx": "react-native",
+    "moduleResolution": "node",
+    "lib": ["es2020", "dom"],
+    "target": "es2020"
+  },
+  "extends": "expo/tsconfig"
+}
